@@ -1,0 +1,35 @@
+telegram:
+  token: "${TELEGRAM_BOT_TOKEN}"
+  allowed_chat_ids: "${TELEGRAM_ALLOWED_CHAT_IDS}"
+
+scraper:
+  workers: "${SCRAPER_WORKERS}"
+  default_pages: "${SCRAPER_DEFAULT_PAGES}"
+  max_pages: "${SCRAPER_MAX_PAGES}"
+  request_timeout: "${SCRAPER_REQUEST_TIMEOUT}"
+  jitter_min: "${SCRAPER_JITTER_MIN}"
+  jitter_max: "${SCRAPER_JITTER_MAX}"
+  burst_every: "${SCRAPER_BURST_EVERY}"
+  burst_sleep_min: "${SCRAPER_BURST_SLEEP_MIN}"
+  burst_sleep_max: "${SCRAPER_BURST_SLEEP_MAX}"
+  telemetry_interval: "${SCRAPER_TELEMETRY_INTERVAL}"
+  result_batch_size: "${SCRAPER_RESULT_BATCH_SIZE}"
+  result_flush_interval: "${SCRAPER_RESULT_FLUSH_INTERVAL}"
+  proxy_health_concurrency: "${SCRAPER_PROXY_HEALTH_CONCURRENCY}"
+  proxy_health_timeout: "${SCRAPER_PROXY_HEALTH_TIMEOUT}"
+  proxy_block_window: "${SCRAPER_PROXY_BLOCK_WINDOW}"
+  proxy_block_threshold: "${SCRAPER_PROXY_BLOCK_THRESHOLD}"
+  proxy_cooldown: "${SCRAPER_PROXY_COOLDOWN}"
+  job_max_attempts: "${SCRAPER_JOB_MAX_ATTEMPTS}"
+  empty_pages_per_dork: "${SCRAPER_EMPTY_PAGES_PER_DORK}"
+
+paths:
+  dorks: "${DORKS_PATH}"
+  proxies: "${PROXIES_PATH}"
+  output: "${OUTPUT_PATH}"
+  dedup_db: "${DEDUP_DB_PATH}"
+  log_file: "${LOG_FILE_PATH}"
+
+logging:
+  level: "${LOG_LEVEL}"
+  json_mode: "${LOG_JSON_MODE}"
